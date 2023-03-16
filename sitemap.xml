@@ -2,30 +2,30 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://mehrnoosh-hk.github.io/tags/blog/</loc>
+    <loc>/tags/blog/</loc>
     <lastmod>2023-03-16T15:44:40+03:30</lastmod>
   </url><url>
-    <loc>http://mehrnoosh-hk.github.io/posts/hugo_github_pages/</loc>
+    <loc>/posts/hugo_github_pages/</loc>
     <lastmod>2023-03-16T15:44:40+03:30</lastmod>
   </url><url>
-    <loc>http://mehrnoosh-hk.github.io/tags/hugo/</loc>
+    <loc>/tags/hugo/</loc>
     <lastmod>2023-03-16T15:44:40+03:30</lastmod>
   </url><url>
-    <loc>http://mehrnoosh-hk.github.io/</loc>
+    <loc>/</loc>
     <lastmod>2023-03-16T15:44:40+03:30</lastmod>
   </url><url>
-    <loc>http://mehrnoosh-hk.github.io/posts/</loc>
+    <loc>/posts/</loc>
     <lastmod>2023-03-16T15:44:40+03:30</lastmod>
   </url><url>
-    <loc>http://mehrnoosh-hk.github.io/tags/</loc>
+    <loc>/tags/</loc>
     <lastmod>2023-03-16T15:44:40+03:30</lastmod>
   </url><url>
-    <loc>http://mehrnoosh-hk.github.io/posts/configuration_in_python/</loc>
+    <loc>/posts/configuration_in_python/</loc>
     <lastmod>2023-03-16T13:49:16+03:30</lastmod>
   </url><url>
-    <loc>http://mehrnoosh-hk.github.io/tags/python/</loc>
+    <loc>/tags/python/</loc>
     <lastmod>2023-03-16T13:49:16+03:30</lastmod>
   </url><url>
-    <loc>http://mehrnoosh-hk.github.io/categories/</loc>
+    <loc>/categories/</loc>
   </url>
 </urlset>

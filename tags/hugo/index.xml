@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Hugo on Mehrnoosh</title>
-    <link>http://mehrnoosh-hk.github.io/tags/hugo/</link>
+    <link>/tags/hugo/</link>
     <description>Recent content in Hugo on Mehrnoosh</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 16 Mar 2023 15:44:40 +0330</lastBuildDate><atom:link href="http://mehrnoosh-hk.github.io/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 16 Mar 2023 15:44:40 +0330</lastBuildDate><atom:link href="/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Create GitHub Pages Using Hugo</title>
-      <link>http://mehrnoosh-hk.github.io/posts/hugo_github_pages/</link>
+      <link>/posts/hugo_github_pages/</link>
       <pubDate>Thu, 16 Mar 2023 15:44:40 +0330</pubDate>
       
-      <guid>http://mehrnoosh-hk.github.io/posts/hugo_github_pages/</guid>
+      <guid>/posts/hugo_github_pages/</guid>
       <description>Github provides this assume feature that you can create your own blog / portfolio for free anf Github will serve your content.
 The only thing you have to do is to create a repository with specific name:
 {your-github-id}.github.io
