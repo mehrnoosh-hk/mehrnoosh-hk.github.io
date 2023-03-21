@@ -19,7 +19,7 @@
     
     <title>Create GitHub Pages Using Hugo</title>
     <meta name="description" content="">
-    <meta name="keywords" content='blog, Hugo'>
+    <meta name="keywords" content='GitHub, Hugo'>
 
     <meta property="og:url" content="/posts/hugo_github_pages/">
     <meta property="og:type" content="website">
@@ -120,7 +120,7 @@
 
         <ul class="post-tags">
         
-            <li class="post-tag"><a href="tags/blog">blog</a></li>
+            <li class="post-tag"><a href="tags/github">GitHub</a></li>
         
             <li class="post-tag"><a href="tags/hugo">Hugo</a></li>
         
@@ -129,11 +129,69 @@
 
     <div class="post-content">
         <p>
-            <p>Github provides this assume feature that you can create your own blog / portfolio for free anf Github will serve your content.</p>
-<p>The only thing you have to do is to create a repository with specific name:</p>
-<p><strong>{your-github-id}.github.io</strong></p>
-<p>You can upload your site or blog content to this repository.
-But if you want to have some sort of content management tool you should create another repository</p>
+            <h1 id="create-your-own-site-using-github">Create Your Own Site Using GitHub</h1>
+<p>Github provides this excellent feature where you can create your own blog/portfolio for free and Github will host your content.</p>
+<p>The only thing you have to do is create a new repository with a specific name: <strong>username.github.io</strong> and replace the username with your <strong>GitHub username</strong>. You can upload your site or blog content to this repository.
+But what if you want to have some sort of content management tool? GitHub explains how to do so using Jekyll. Jekyll is a static site generator written in Ruby. <a href="https://docs.github.com/en/pages/quickstart">Here</a> is the link to the GitHub instructions for creating GitHub pages using Jekyll. Now we are going to do the same using <a href="https://gohugo.io/">Hugo</a>. Hugo is one of the most popular open-source static site generators with its amazing speed and flexibility written in Go. You can install it easily:</p>
+<p>macOS</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$ brew install hugo
+</span></span></code></pre></div><p>Windows</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$ choco install hugo-extended
+</span></span></code></pre></div><p>Linux</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$ sudo snap install hugo
+</span></span></code></pre></div><p>Hugo has a simple, easy-to-use CLI, you can test your installation by running</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>hugo version
+</span></span></code></pre></div><ol>
+<li>
+<p>We need another repository to store our Hugo contents, our drafts, theme, etc. you can name it whatever you want.</p>
+<p>We need to clone this repository locally, after cloning we start a new Hugo site inside this directory by running:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>hugo new sit WhateverNameYouWant
+</span></span></code></pre></div></li>
+</ol>
+<p>Hugo creates a lot of boilerplate code inside that directory.</p>
+<ol>
+<li>
+<p>Now we need to select a theme for our blog. There are several free themes available for Hugo, you can find them <a href="https://themes.gohugo.io/">here</a>. After selecting the desired theme, we are going to clone the theme repository inside our blog/theme directory</p>
+<p>To do that, inside your blog repository, CD inside theme directory and clone the theme repository here</p>
+</li>
+<li>
+<p>Set the theme as default. To utilize our theme, inside blog repository open config.toml file and set the following:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-toml" data-lang="toml"><span style="display:flex;"><span><span style="color:#a6e22e">baseURL</span> = <span style="color:#e6db74">&#39;&#39;</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">defaultContentLanguage</span> = <span style="color:#e6db74">&#34;en&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">languageCode</span> = <span style="color:#e6db74">&#39;en-us&#39;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">title</span> = <span style="color:#e6db74">&#39;Your Blog Title&#39;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">theme</span> = <span style="color:#e6db74">&#34;theme name&#34;</span>
+</span></span></code></pre></div></li>
+<li>
+<p>Lets write our first post</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>hugo new posts/myPostName.md
+</span></span></code></pre></div><p>This will create a Markdown file inside posts directory. You can open this file and edit your first blog post.</p>
+</li>
+<li>
+<p>Now to see a preview of your blog you can simply run:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>hugo server
+</span></span></code></pre></div><p>and open the link Hugo generates.</p>
+</li>
+<li>
+<p>The crucial step here is to add the repository that we want our blog content to live (the repository with your GitHub username) as a sub-module to our blog repository.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git submodule add -b main repoURL public
+</span></span></code></pre></div><p>The reason why we call our destination folder public is that when Hugo renders our content it will store the results in a folder named public, by doing so we don’t need to copy rendered content to where our GitHub pages repository gonna live.</p>
+</li>
+<li>
+<p>To generate the static files we just run:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>hugo -t themeName
+</span></span></code></pre></div><p>The generated files go to the public directory.</p>
+</li>
+<li>
+<p>Inside the public directory if we check the remote origin points to our GitHub page repository (username.github.io), so the only thing that is left is to commit static content to this repository.</p>
+</li>
+</ol>
+<p>Now you can go to <a href="http://username.github.io">http://username.github.io</a> and enjoy your blog.</p>
+<p>There would be also some configuration regarding the theme you have selected, for instance how the home page should look like, which is usually explained in theme repository.</p>
+<p>Here are some useful resources:</p>
+<p><a href="https://www.youtube.com/watch?v=LIFvgrRxdt4">Creating a Blog with Hugo and Github in 10 minutes</a></p>
 
         </p>
         

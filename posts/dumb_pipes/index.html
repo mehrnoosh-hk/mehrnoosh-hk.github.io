@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+        :root {
+            --accent-color: #FF4D4D;
+        }
+    </style>
+
+    
+    
+    
+    
+    
+    
+
+    
+    <title>Smart Endpoints and Dumb Pipes Principle</title>
+    <meta name="description" content="">
+    <meta name="keywords" content='Microservices'>
+
+    <meta property="og:url" content="/posts/dumb_pipes/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Smart Endpoints and Dumb Pipes Principle">
+    <meta property="og:description" content="">
+    <meta property="og:image" content="">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Smart Endpoints and Dumb Pipes Principle">
+    <meta name="twitter:description" content="">
+    <meta property="twitter:domain" content="/posts/dumb_pipes/">
+    <meta property="twitter:url" content="/posts/dumb_pipes/">
+    <meta name="twitter:image" content="">
+
+    
+    <link rel="canonical" href="/posts/dumb_pipes/" />
+
+    <link rel="stylesheet" type="text/css" href="/css/normalize.min.css" media="print" onload="this.media='all'">
+    <link rel="stylesheet" type="text/css" href="/css/main.css">
+    <link disabled id="dark-theme" rel="stylesheet" href="/css/dark.css">
+
+    <script src="/js/svg-injector.min.js"></script>
+    <script src="/js/feather-icons.min.js"></script>
+    <script src="/js/main.js"></script>
+
+    
+    
+</head>
+<body>
+        <script type="text/javascript">
+            
+            setThemeByUserPref();
+        </script><header class="header">
+    <nav class="header-nav">
+
+        
+
+        <div class="nav-title">
+            <a class="nav-brand" href="">Mehrnoosh</a>
+        </div>
+
+        <div class="nav-links">
+            
+            <div class="nav-link">
+                <a href="/posts/"> Posts </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="/tags/"> Tags </a>
+            </div>
+            
+
+            <span class="nav-icons-divider"></span>
+            <div class="nav-link dark-theme-toggle">
+                <span id="dark-theme-toggle-screen-reader-target" class="sr-only"></span>
+                <a>
+                    <span id="theme-toggle-icon" data-feather="moon"></span>
+                </a>
+            </div>
+
+            <div class="nav-link" id="hamburger-menu-toggle">
+                <span id="hamburger-menu-toggle-screen-reader-target" class="sr-only">menu</span>
+                <a>
+                    <span data-feather="menu"></span>
+                </a>
+            </div>
+
+            
+            <ul class="nav-hamburger-list visibility-hidden">
+                
+                <li class="nav-item">
+                    <a href="/posts/"> Posts </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="/tags/"> Tags </a>
+                </li>
+                
+                <li class="nav-item dark-theme-toggle">
+                    <span id="dark-theme-toggle-screen-reader-target" class="sr-only">theme</span>
+                    <a>
+                        <span id="theme-toggle-icon" data-feather="moon"></span>
+                    </a>
+                </li>
+            </ul>
+
+        </div>
+    </nav>
+</header>
+<main id="content">
+    <div class="post container">
+    <div class="post-header-section">
+        <h1>Smart Endpoints and Dumb Pipes Principle</h1>
+        <small role="doc-subtitle"></small>
+        <p class="post-date">
+            March 20, 2023
+        </p>
+
+        <ul class="post-tags">
+        
+            <li class="post-tag"><a href="tags/microservices">Microservices</a></li>
+        
+        </ul>
+    </div>
+
+    <div class="post-content">
+        <p>
+            <p>In a microservices architecture, it is essential to design communication methods between microservices. Contrary to a monolithic design where all components live within the same process and can communicate directly, microservices may be distributed across a cluster of servers. There are two basic ways of communicating between microservices: <strong>Synchronous</strong> and <strong>Asynchronous</strong></p>
+<h2 id="synchronous-or-requestresponse"><strong>Synchronous or Request/Response:</strong></h2>
+<p>In this method, a service directly invokes another one by sending a request and waiting for a response. For example, when a user updates their address in the profile, the user service sends a PUT request to the billing service so that the billing address updates accordingly.</p>
+<h2 id="asynchronous-or-publishsubscribe"><strong>Asynchronous or Publish/Subscribe:</strong></h2>
+<p>Also known as <strong>event-based</strong> architecture, in this method, a service implicitly invokes another service by publishing an event that the other service is watching for. For example, when a customer makes a payment, the payment microservice publishes an event, and the shipping service that is watching for that event starts the shipment process.</p>
+<p>The problem occurs when we try to solve complex communication requirements by building a complex message bus for routing messages between services. This means the bus is configured or scripted to handle different communication scenarios between services.</p>
+<p>But the best way to handle asynchronous communication is to let the endpoints that produce and consume messages be smart, but the pipe between them to be dumb. In other words, let logic be centralized in the services and refrain from complex messaging services.</p>
+<p>One of the main benefits of the microservices architecture is the ability to develop and deploy each service without conflicting with other parts of the system. Building smart endpoints and dumb pipes helps to reach this goal by encapsulating the logic of consumption of incoming requests and publishing outgoing events inside the service.</p>
+<p>This principle also helps when we need our system to scale up. Another service can join the dumb pipeline and start consuming and publishing messages immediately.</p>
+
+        </p>
+        
+    </div>
+
+    <div class="prev-next">
+        
+    </div>
+</div>
+
+
+
+    
+
+        </main><footer class="footer">
+    <span>&copy; 2023 </span>
+    <span>
+        Made with &#10084;&#65039; using <a target="_blank" href="https://github.com/526avijitgupta/gokarna">Gokarna</a>
+    </span>
+</footer>
+</body>
+</html>
