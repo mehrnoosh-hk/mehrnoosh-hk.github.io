@@ -14,7 +14,7 @@
       
       <guid>/posts/dumb_pipes/</guid>
       <description>In a microservices architecture, it is essential to design communication methods between microservices. Contrary to a monolithic design where all components live within the same process and can communicate directly, microservices may be distributed across a cluster of servers. There are two basic ways of communicating between microservices: Synchronous and Asynchronous
-Synchronous or Request/Response: In this method, a service directly invokes another one by sending a request and waiting for a response.</description>
+Synchronous or Request/Response: # In this method, a service directly invokes another one by sending a request and waiting for a response.</description>
     </item>
     
   </channel>

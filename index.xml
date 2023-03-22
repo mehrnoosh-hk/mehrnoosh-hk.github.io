@@ -6,7 +6,25 @@
     <description>Recent content on Mehrnoosh</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 20 Mar 2023 14:16:44 +0330</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 22 Mar 2023 00:00:00 +0000</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Thread Safe Singleton Decorator</title>
+      <link>/posts/thread_singleton/</link>
+      <pubDate>Wed, 22 Mar 2023 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/thread_singleton/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>About Me</title>
+      <link>/about/about/</link>
+      <pubDate>Tue, 21 Mar 2023 00:00:00 +0000</pubDate>
+      
+      <guid>/about/about/</guid>
+      <description>This is about me!</description>
+    </item>
+    
     <item>
       <title>Smart Endpoints and Dumb Pipes Principle</title>
       <link>/posts/dumb_pipes/</link>
@@ -14,7 +32,7 @@
       
       <guid>/posts/dumb_pipes/</guid>
       <description>In a microservices architecture, it is essential to design communication methods between microservices. Contrary to a monolithic design where all components live within the same process and can communicate directly, microservices may be distributed across a cluster of servers. There are two basic ways of communicating between microservices: Synchronous and Asynchronous
-Synchronous or Request/Response: In this method, a service directly invokes another one by sending a request and waiting for a response.</description>
+Synchronous or Request/Response: # In this method, a service directly invokes another one by sending a request and waiting for a response.</description>
     </item>
     
     <item>
@@ -23,8 +41,8 @@ Synchronous or Request/Response: In this method, a service directly invokes anot
       <pubDate>Thu, 16 Mar 2023 15:44:40 +0330</pubDate>
       
       <guid>/posts/hugo_github_pages/</guid>
-      <description>Create Your Own Site Using GitHub Github provides this excellent feature where you can create your own blog/portfolio for free and Github will host your content.
-The only thing you have to do is create a new repository with a specific name: username.github.io and replace the username with your GitHub username. You can upload your site or blog content to this repository. But what if you want to have some sort of content management tool?</description>
+      <description>Github provides this excellent feature where you can create your own blog/portfolio for free and Github will host your content.
+The only thing you have to do is create a new repository with a specific name: username.github.io and replace the username with your GitHub username. You can upload your site or blog content to this repository. But what if you want to have some sort of content management tool? GitHub explains how to do so using Jekyll.</description>
     </item>
     
     <item>

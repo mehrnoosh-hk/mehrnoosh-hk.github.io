@@ -19,15 +19,14 @@
   <meta name="theme-color" content="rgb(255,255,255)" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   
-  <title>Smart Endpoints and Dumb Pipes Principle &middot; Mehrnoosh</title>
-    <meta name="title" content="Smart Endpoints and Dumb Pipes Principle &middot; Mehrnoosh" />
+  <title>Thread Safe Singleton Decorator &middot; Mehrnoosh</title>
+    <meta name="title" content="Thread Safe Singleton Decorator &middot; Mehrnoosh" />
   
-  <meta name="description" content="In a microservices architecture, it is essential to design communication methods between microservices. Contrary to a monolithic design where all components live within the same process and can communicate directly, microservices may be distributed across a cluster of servers. There are two basic ways of communicating between microservices: Synchronous and Asynchronous
-Synchronous or Request/Response: # In this method, a service directly invokes another one by sending a request and waiting for a response." />
-  
+  <meta name="description" content="" />
   
   
-  <link rel="canonical" href="/posts/dumb_pipes/" />
+  
+  <link rel="canonical" href="/posts/thread_singleton/" />
   
   
   
@@ -70,18 +69,16 @@ Synchronous or Request/Response: # In this method, a service directly invokes an
   
   
   
-  <meta property="og:title" content="Smart Endpoints and Dumb Pipes Principle" />
-<meta property="og:description" content="In a microservices architecture, it is essential to design communication methods between microservices. Contrary to a monolithic design where all components live within the same process and can communicate directly, microservices may be distributed across a cluster of servers. There are two basic ways of communicating between microservices: Synchronous and Asynchronous
-Synchronous or Request/Response: # In this method, a service directly invokes another one by sending a request and waiting for a response." />
+  <meta property="og:title" content="Thread Safe Singleton Decorator" />
+<meta property="og:description" content="" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="/posts/dumb_pipes/" /><meta property="article:section" content="posts" />
-<meta property="article:published_time" content="2023-03-20T14:16:44+03:30" />
-<meta property="article:modified_time" content="2023-03-20T14:16:44+03:30" />
+<meta property="og:url" content="/posts/thread_singleton/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2023-03-22T00:00:00+00:00" />
+<meta property="article:modified_time" content="2023-03-22T00:00:00+00:00" />
 
   <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Smart Endpoints and Dumb Pipes Principle"/>
-<meta name="twitter:description" content="In a microservices architecture, it is essential to design communication methods between microservices. Contrary to a monolithic design where all components live within the same process and can communicate directly, microservices may be distributed across a cluster of servers. There are two basic ways of communicating between microservices: Synchronous and Asynchronous
-Synchronous or Request/Response: # In this method, a service directly invokes another one by sending a request and waiting for a response."/>
+<meta name="twitter:title" content="Thread Safe Singleton Decorator"/>
+<meta name="twitter:description" content=""/>
 
   
   <script type="application/ld+json">
@@ -89,26 +86,26 @@ Synchronous or Request/Response: # In this method, a service directly invokes an
     "@context": "https://schema.org",
     "@type": "Article",
     "articleSection": "Posts",
-    "name": "Smart Endpoints and Dumb Pipes Principle",
-    "headline": "Smart Endpoints and Dumb Pipes Principle",
+    "name": "Thread Safe Singleton Decorator",
+    "headline": "Thread Safe Singleton Decorator",
     
-    "abstract": "In a microservices architecture, it is essential to design communication methods between microservices. Contrary to a monolithic design where all components live within the same process and can communicate directly, microservices may be distributed across a cluster of servers. There are two basic ways of communicating between microservices: Synchronous and Asynchronous\nSynchronous or Request\/Response: # In this method, a service directly invokes another one by sending a request and waiting for a response.",
+    
     "inLanguage": "en-us",
-    "url" : "\/posts\/dumb_pipes\/",
+    "url" : "\/posts\/thread_singleton\/",
     "author" : {
       "@type": "Person",
       "name": ""
     },
     "copyrightYear": "2023",
-    "dateCreated": "2023-03-20T14:16:44\u002b03:30",
-    "datePublished": "2023-03-20T14:16:44\u002b03:30",
+    "dateCreated": "2023-03-22T00:00:00\u002b00:00",
+    "datePublished": "2023-03-22T00:00:00\u002b00:00",
     
-    "dateModified": "2023-03-20T14:16:44\u002b03:30",
+    "dateModified": "2023-03-22T00:00:00\u002b00:00",
     
-    "keywords": ["Microservices"],
+    "keywords": ["Python"],
     
     "mainEntityOfPage": "true",
-    "wordCount": "319"
+    "wordCount": "0"
   }]
   </script>
 
@@ -323,7 +320,7 @@ Synchronous or Request/Response: # In this method, a service directly invokes an
     <header class="max-w-prose">
       
       <h1 class="mt-0 text-4xl font-extrabold text-neutral-900 dark:text-neutral">
-        Smart Endpoints and Dumb Pipes Principle
+        Thread Safe Singleton Decorator
       </h1>
       <div class="mt-8 mb-12 text-base text-neutral-500 dark:text-neutral-400 print:hidden">
         
@@ -355,7 +352,7 @@ Synchronous or Request/Response: # In this method, a service directly invokes an
   <div class="flex flex-row flex-wrap items-center">
     
     
-      <time datetime="2023-03-20 14:16:44 &#43;0330 &#43;0330">March 20, 2023</time>
+      <time datetime="2023-03-22 00:00:00 &#43;0000 UTC">March 22, 2023</time>
     
 
     
@@ -372,16 +369,7 @@ Synchronous or Request/Response: # In this method, a service directly invokes an
     <section class="flex flex-col max-w-full mt-0 prose dark:prose-invert lg:flex-row">
       
       <div class="min-w-0 min-h-0 max-w-prose grow">
-        <p>In a microservices architecture, it is essential to design communication methods between microservices. Contrary to a monolithic design where all components live within the same process and can communicate directly, microservices may be distributed across a cluster of servers. There are two basic ways of communicating between microservices: <strong>Synchronous</strong> and <strong>Asynchronous</strong></p>
-<h2 id="synchronous-or-requestresponse" class="relative group"><strong>Synchronous or Request/Response:</strong> <span class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#synchronous-or-requestresponse" aria-label="Anchor">#</a></span></h2>
-<p>In this method, a service directly invokes another one by sending a request and waiting for a response. For example, when a user updates their address in the profile, the user service sends a PUT request to the billing service so that the billing address updates accordingly.</p>
-<h2 id="asynchronous-or-publishsubscribe" class="relative group"><strong>Asynchronous or Publish/Subscribe:</strong> <span class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#asynchronous-or-publishsubscribe" aria-label="Anchor">#</a></span></h2>
-<p>Also known as <strong>event-based</strong> architecture, in this method, a service implicitly invokes another service by publishing an event that the other service is watching for. For example, when a customer makes a payment, the payment microservice publishes an event, and the shipping service that is watching for that event starts the shipment process.</p>
-<p>The problem occurs when we try to solve complex communication requirements by building a complex message bus for routing messages between services. This means the bus is configured or scripted to handle different communication scenarios between services.</p>
-<p>But the best way to handle asynchronous communication is to let the endpoints that produce and consume messages be smart, but the pipe between them to be dumb. In other words, let logic be centralized in the services and refrain from complex messaging services.</p>
-<p>One of the main benefits of the microservices architecture is the ability to develop and deploy each service without conflicting with other parts of the system. Building smart endpoints and dumb pipes helps to reach this goal by encapsulating the logic of consumption of incoming requests and publishing outgoing events inside the service.</p>
-<p>This principle also helps when we need our system to scale up. Another service can join the dumb pipeline and start consuming and publishing messages immediately.</p>
-
+        
       </div>
     </section>
     <footer class="pt-8 max-w-prose print:hidden">
@@ -404,7 +392,7 @@ Synchronous or Request/Response: # In this method, a service directly invokes an
       
         <a
           class="m-1 inline-block min-w-[2.4rem] rounded bg-neutral-300 p-1 text-center text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-          href="https://www.facebook.com/sharer/sharer.php?u=/posts/dumb_pipes/&amp;quote=Smart%20Endpoints%20and%20Dumb%20Pipes%20Principle"
+          href="https://www.facebook.com/sharer/sharer.php?u=/posts/thread_singleton/&amp;quote=Thread%20Safe%20Singleton%20Decorator"
           title="Share on Facebook"
           aria-label="Share on Facebook"
           >
@@ -421,7 +409,7 @@ Synchronous or Request/Response: # In this method, a service directly invokes an
       
         <a
           class="m-1 inline-block min-w-[2.4rem] rounded bg-neutral-300 p-1 text-center text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-          href="https://twitter.com/intent/tweet/?url=/posts/dumb_pipes/&amp;text=Smart%20Endpoints%20and%20Dumb%20Pipes%20Principle"
+          href="https://twitter.com/intent/tweet/?url=/posts/thread_singleton/&amp;text=Thread%20Safe%20Singleton%20Decorator"
           title="Tweet on Twitter"
           aria-label="Tweet on Twitter"
           >
@@ -438,7 +426,7 @@ Synchronous or Request/Response: # In this method, a service directly invokes an
       
         <a
           class="m-1 inline-block min-w-[2.4rem] rounded bg-neutral-300 p-1 text-center text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-          href="https://tootpick.org/#text=/posts/dumb_pipes/%20Smart%20Endpoints%20and%20Dumb%20Pipes%20Principle"
+          href="https://tootpick.org/#text=/posts/thread_singleton/%20Thread%20Safe%20Singleton%20Decorator"
           title="Toot on Mastodon"
           aria-label="Toot on Mastodon"
           >
@@ -455,7 +443,7 @@ Synchronous or Request/Response: # In this method, a service directly invokes an
       
         <a
           class="m-1 inline-block min-w-[2.4rem] rounded bg-neutral-300 p-1 text-center text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-          href="https://pinterest.com/pin/create/bookmarklet/?url=/posts/dumb_pipes/&amp;description=Smart%20Endpoints%20and%20Dumb%20Pipes%20Principle"
+          href="https://pinterest.com/pin/create/bookmarklet/?url=/posts/thread_singleton/&amp;description=Thread%20Safe%20Singleton%20Decorator"
           title="Pin on Pinterest"
           aria-label="Pin on Pinterest"
           >
@@ -472,7 +460,7 @@ Synchronous or Request/Response: # In this method, a service directly invokes an
       
         <a
           class="m-1 inline-block min-w-[2.4rem] rounded bg-neutral-300 p-1 text-center text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-          href="https://reddit.com/submit/?url=/posts/dumb_pipes/&amp;resubmit=true&amp;title=Smart%20Endpoints%20and%20Dumb%20Pipes%20Principle"
+          href="https://reddit.com/submit/?url=/posts/thread_singleton/&amp;resubmit=true&amp;title=Thread%20Safe%20Singleton%20Decorator"
           title="Submit to Reddit"
           aria-label="Submit to Reddit"
           >
@@ -489,7 +477,7 @@ Synchronous or Request/Response: # In this method, a service directly invokes an
       
         <a
           class="m-1 inline-block min-w-[2.4rem] rounded bg-neutral-300 p-1 text-center text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-          href="https://www.linkedin.com/shareArticle?mini=true&amp;url=/posts/dumb_pipes/&amp;title=Smart%20Endpoints%20and%20Dumb%20Pipes%20Principle"
+          href="https://www.linkedin.com/shareArticle?mini=true&amp;url=/posts/thread_singleton/&amp;title=Thread%20Safe%20Singleton%20Decorator"
           title="Share on LinkedIn"
           aria-label="Share on LinkedIn"
           >
@@ -506,7 +494,7 @@ Synchronous or Request/Response: # In this method, a service directly invokes an
       
         <a
           class="m-1 inline-block min-w-[2.4rem] rounded bg-neutral-300 p-1 text-center text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-          href="mailto:?body=/posts/dumb_pipes/&amp;subject=Smart%20Endpoints%20and%20Dumb%20Pipes%20Principle"
+          href="mailto:?body=/posts/thread_singleton/&amp;subject=Thread%20Safe%20Singleton%20Decorator"
           title="Send via email"
           aria-label="Send via email"
           >
@@ -533,7 +521,7 @@ Synchronous or Request/Response: # In this method, a service directly invokes an
       <div class="flex justify-between pt-3">
         <span>
           
-            <a class="group flex" href="/posts/hugo_github_pages/">
+            <a class="group flex" href="/posts/dumb_pipes/">
               <span
                 class="mr-2 text-neutral-700 transition-transform group-hover:-translate-x-[2px] group-hover:text-primary-600 ltr:inline rtl:hidden dark:text-neutral dark:group-hover:text-primary-400"
                 >&larr;</span
@@ -545,11 +533,11 @@ Synchronous or Request/Response: # In this method, a service directly invokes an
               <span class="flex flex-col">
                 <span
                   class="mt-[0.1rem] leading-6 group-hover:underline group-hover:decoration-primary-500"
-                  >Create GitHub Pages Using Hugo</span
+                  >Smart Endpoints and Dumb Pipes Principle</span
                 >
                 <span class="mt-[0.1rem] text-xs text-neutral-500 dark:text-neutral-400">
                   
-                    <time datetime="2023-03-16 15:44:40 &#43;0330 &#43;0330">March 16, 2023</time>
+                    <time datetime="2023-03-20 14:16:44 &#43;0330 &#43;0330">March 20, 2023</time>
                   
                 </span>
               </span>
@@ -557,28 +545,6 @@ Synchronous or Request/Response: # In this method, a service directly invokes an
           
         </span>
         <span>
-          
-            <a class="group flex text-right" href="/posts/thread_singleton/">
-              <span class="flex flex-col">
-                <span
-                  class="mt-[0.1rem] leading-6 group-hover:underline group-hover:decoration-primary-500"
-                  >Thread Safe Singleton Decorator</span
-                >
-                <span class="mt-[0.1rem] text-xs text-neutral-500 dark:text-neutral-400">
-                  
-                    <time datetime="2023-03-22 00:00:00 &#43;0000 UTC">March 22, 2023</time>
-                  
-                </span>
-              </span>
-              <span
-                class="ml-2 text-neutral-700 transition-transform group-hover:translate-x-[2px] group-hover:text-primary-600 ltr:inline rtl:hidden dark:text-neutral dark:group-hover:text-primary-400"
-                >&rarr;</span
-              >
-              <span
-                class="mr-2 text-neutral-700 transition-transform group-hover:-translate-x-[2px] group-hover:text-primary-600 ltr:hidden rtl:inline dark:text-neutral dark:group-hover:text-primary-400"
-                >&larr;</span
-              >
-            </a>
           
         </span>
       </div>
@@ -590,19 +556,6 @@ Synchronous or Request/Response: # In this method, a service directly invokes an
     </footer>
   </article>
 
-        
-          <div
-            class="pointer-events-none absolute top-[100vh] bottom-0 w-12 ltr:right-0 rtl:left-0"
-          >
-            <a
-              href="#the-top"
-              class="pointer-events-auto sticky top-[calc(100vh-5.5rem)] flex h-12 w-12 items-center justify-center rounded-full bg-neutral/50 text-xl text-neutral-700 backdrop-blur hover:text-primary-600 dark:bg-neutral-800/50 dark:text-neutral dark:hover:text-primary-400"
-              aria-label="Scroll to top"
-              title="Scroll to top"
-            >
-              &uarr;
-            </a>
-          </div>
         
       </main><footer class="py-10 print:hidden">
   

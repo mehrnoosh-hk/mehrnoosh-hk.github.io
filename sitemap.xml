@@ -1,37 +1,73 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
-  <url>
-    <loc>/</loc>
-    <lastmod>2023-03-20T14:16:44+03:30</lastmod>
-  </url><url>
-    <loc>/tags/microservices/</loc>
-    <lastmod>2023-03-20T14:16:44+03:30</lastmod>
-  </url><url>
-    <loc>/posts/</loc>
-    <lastmod>2023-03-20T14:16:44+03:30</lastmod>
-  </url><url>
-    <loc>/posts/dumb_pipes/</loc>
-    <lastmod>2023-03-20T14:16:44+03:30</lastmod>
-  </url><url>
-    <loc>/tags/</loc>
-    <lastmod>2023-03-20T14:16:44+03:30</lastmod>
-  </url><url>
-    <loc>/posts/hugo_github_pages/</loc>
-    <lastmod>2023-03-16T15:44:40+03:30</lastmod>
-  </url><url>
-    <loc>/tags/github/</loc>
-    <lastmod>2023-03-16T15:44:40+03:30</lastmod>
-  </url><url>
-    <loc>/tags/hugo/</loc>
-    <lastmod>2023-03-16T15:44:40+03:30</lastmod>
-  </url><url>
-    <loc>/posts/configuration_in_python/</loc>
-    <lastmod>2023-03-16T13:49:16+03:30</lastmod>
-  </url><url>
-    <loc>/tags/python/</loc>
-    <lastmod>2023-03-16T13:49:16+03:30</lastmod>
-  </url><url>
-    <loc>/categories/</loc>
-  </url>
+  
+    
+      <url>
+            <loc>/</loc>
+            <lastmod>2023-03-22T00:00:00+00:00</lastmod>
+          </url>
+    
+  
+    
+      <url>
+            <loc>/posts/</loc>
+            <lastmod>2023-03-22T00:00:00+00:00</lastmod>
+          </url>
+    
+  
+    
+  
+    
+  
+    
+      <url>
+            <loc>/posts/thread_singleton/</loc>
+            <lastmod>2023-03-22T00:00:00+00:00</lastmod>
+          </url>
+    
+  
+    
+      <url>
+            <loc>/about/about/</loc>
+            <lastmod>2023-03-21T00:00:00+00:00</lastmod>
+          </url>
+    
+  
+    
+      <url>
+            <loc>/about/</loc>
+            <lastmod>2023-03-21T00:00:00+00:00</lastmod>
+          </url>
+    
+  
+    
+  
+    
+      <url>
+            <loc>/posts/dumb_pipes/</loc>
+            <lastmod>2023-03-20T14:16:44+03:30</lastmod>
+          </url>
+    
+  
+    
+      <url>
+            <loc>/posts/hugo_github_pages/</loc>
+            <lastmod>2023-03-16T15:44:40+03:30</lastmod>
+          </url>
+    
+  
+    
+  
+    
+  
+    
+      <url>
+            <loc>/posts/configuration_in_python/</loc>
+            <lastmod>2023-03-16T13:49:16+03:30</lastmod>
+          </url>
+    
+  
+    
+  
 </urlset>
